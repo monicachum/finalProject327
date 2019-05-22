@@ -1,0 +1,492 @@
+/*HEADER*/
+.headerImage{
+    background-image: url(../images/cat-room.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    position: relative;
+    z-index: 998;
+    
+}
+
+.headerText{
+    position: absolute;
+    text-align: center;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+h1{
+    font-family: raleway, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 55px;
+    margin: 0;
+    color: white;
+    text-shadow:2px 2px 5px #8c8c8c;
+}
+
+h2 {
+    font-family: questa-grande, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 105px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow:3px 3px 10px #8c8c8c;
+}
+
+h3 {
+    font-family: raleway, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 36px;
+    margin: 0 0 4% 0;
+    padding: 10px 0 0 0;
+    color: white;
+    text-shadow:2px 2px 5px #8c8c8c;
+}
+/* HEADER END*/
+
+
+/* CENTER IMAGES*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% 5% 0 5%;
+}
+
+.column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0.5%;
+}
+
+.column img{
+    margin-top: 4px;
+    width: 100%;
+}
+
+/* CENTER IMAGES END*/
+
+
+/* COUNTER */
+.counter-container{
+    width: 100%;
+}
+
+#counter{
+    width: 25%;
+    height: auto;
+    padding: 3%;
+    margin: 0 0 0 5%;
+}
+
+#counterTxt{
+    padding: 15px;
+    margin: 5% 5% 0 0;
+    width: 60%;
+    float: right;
+    text-align: left;
+}
+
+.p-links{
+    font-family: raleway, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    color: #4490D1;
+    text-decoration: none;
+    float: left;
+}
+
+#counterButton{
+    float: right;
+    margin: 3% 3% 0 0;
+    z-index: 1000;
+}
+/*COUNTER END*/
+
+
+/*SHOP LINKS*/
+.row-shoplinks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.column-shoplinks{
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 10px;
+    position: relative;
+}
+
+.column-shoplinks img{
+    margin-top: 4px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text{
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 25%;
+}
+
+.shopText{
+    left: 33%;
+}
+
+h4{
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100%;
+    z-index: 1000;
+}
+
+#shoplinksbutton{
+    margin: 0 auto;
+}
+/*SHOP LINKS END*/
+
+
+/*LOGO BANNER*/
+#featured{
+    text-align: center;
+    font-size: 36px;
+    margin: 25px 0;
+    font-weight: 700;
+}
+
+.logobanner{
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.logobanner .web{
+    width: 100%;
+}
+
+.logobanner .mobile{
+    display: none;
+}
+/*LOGO BANNER END*/
+
+
+/*MEWSLETTER*/
+.mewsletter-container{
+    width: 100%;
+}
+
+.mewsletter{
+    width: 850px;
+    height: 400px;
+    background-color: #FFEDEE;
+    text-align:center;
+    margin: 0 auto;
+}
+
+h5{
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    text-align: center;
+    color: #575757;
+    padding-top: 50px;
+    margin: 0;
+}
+
+form input{
+    font-size: 20px;
+    padding: 15px;
+    margin: 15px;
+    width: 70%;
+}
+
+::placeholder{
+    font-family: raleway, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    opacity: 25%;
+}
+
+h6{
+    font-family: raleway, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #575757;
+    padding: 10px;
+    margin: 0;
+}
+
+#mewsletterbutton{
+    margin: 15px auto;
+}
+/*MEWSLETTER END*/
+
+
+/* Responsive Layout - tablet */
+@media screen and (max-width: 850px) {
+    .headerImage {height: 850px;}
+    
+    .headerText {top: 20%;}
+
+    h1 {font-size: 36px;}
+    
+    #index {font-size: 65px;}
+    
+    h3 {
+        font-size: 20px;
+        padding: 5px 0 0 0;
+    }
+    
+    #slidebutton{
+        top: 69%;
+        margin-top: -22px;
+        right: 12.5%;
+        font-size: 12px;
+    }
+    
+    .prev, .next {
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+    .dot {
+        height: 4px;
+        width: 4px;
+        margin: 9px 1px;
+    }
+    
+    .p-links{
+        font-size: 12px;
+    }
+    
+    #counterTxt{
+        padding: 10px;
+        margin: 3% 5% 0 0;
+        width: 60%;
+    }
+    
+    #counterButton{
+        margin: 0 3% 0 0;
+        z-index: 1000;
+    }
+    
+    h4{font-size: 16px;}
+    
+    .column-shoplinks{
+        padding: 0 5px;
+    }
+    
+    .text{
+        top: 20%;
+        left: 23%;
+    }
+    
+    .shopText{
+        left: 31%;
+    }
+
+    #featured{
+        font-size: 18px;
+        margin: 12.5px 0 12.5px 0;
+    }
+    
+    .mewsletter{
+        width: 425px;
+        height: 225px;
+    }
+    
+    h5{
+        font-size: 22px;
+        padding-top: 20px;
+    }
+    
+    form input{
+        font-size: 14px;
+        padding: 6px;
+        margin: 0;
+    }
+    
+    h6{
+        font-size: 10px;
+        padding-top: 15px;
+    }
+    
+    #mewsletterbutton{
+        margin: 5px auto;
+        
+    }
+    
+    .footer-container{
+        margin-top: 25px;
+    }
+}
+
+/* Responsive Layout - mobile */
+@media screen and (max-width: 600px) {
+    .headerImage {height: 500px;}
+    
+    .headerText {top: 30%;}
+    
+    h1 {font-size: 32px;}
+    
+    #index {
+        font-size: 45px;
+    }
+    
+    h3 {
+        font-size: 18px;
+        padding: 5px 0 0 0;
+    }
+    
+    .column{
+        flex: 50%;
+        max-width: 50%;
+        padding-top: 0;
+    }
+    
+    .slide .web{
+        display: none;
+    }
+    
+    .slide .mobile {
+        width: 100%;
+        float: left;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    #slidebutton{
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+        right: 0%;
+        position: relative;
+    }
+    
+    .prev, .next {
+        padding: 8px;
+        font-size: 12px;
+    }
+    
+    .counter-container{
+        margin: 0 auto;
+        float: left;
+        width: 100%;
+    }
+    
+    #counterTxt{
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+        padding: 10px;
+    }
+    
+    #counter{
+        width: 100%;
+        padding: 30px 75px 0px 75px;
+        margin: 0 auto;
+    }
+    
+    #counterButton{
+        width: 100%;
+        margin: 15px auto;
+        float: left;
+        padding: 10px;
+    }
+    
+    .p-links{
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+        padding: 10px;
+    }
+    
+    .row-shoplinks{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .column-shoplinks{
+        flex: 75%;
+        max-width: 75%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+    
+    .column-shoplinks img{
+        margin-top: 4px;
+        width: 100%;
+    }
+    
+    .text{
+        top: 20%;
+        left: 23%;
+    }
+    
+    .shopText{
+        left: 33%;
+    }
+    
+    #featured{
+        margin: 0;
+    }
+    
+    .logobanner .web{
+        display: none;
+    }
+    
+    .logobanner .mobile{
+        display: block;
+        width: 100%;
+    }
+    
+    .mewsletter{
+        width: 100%;
+        height: 225px;
+        background-color: #FFEDEE;
+        text-align:center;
+        margin: 0 auto;
+    }
+    
+    h5{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    
+    form input{
+        font-size: 14px;
+        padding: 5px;
+        margin: 5px;
+        width: 70%;
+    }
+    
+    h6{
+        font-size: 10px;
+        padding: 10px;
+    }
+    
+    #mewsletterbutton{
+        margin: 0 auto;
+    }
+}
+
+

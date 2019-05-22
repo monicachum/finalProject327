@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KitTea</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/ktAbout.css"/>
+        <link rel="stylesheet" type="text/css" href="css/ktUniv.css"/>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+            <link rel="stylesheet" href="https://use.typekit.net/scj4crf.css">
+                </head>
+    
+    <body>
+        
+        <!--NAVIGATION-->
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <nav class="mainNav" id="respNav">
+                <a href="index.html">Home</a>
+                <a href="kt_menu.html">The Menu</a>
+                <a class="active" href="kt_about.html">Our Story</a>
+                <a href="kt_shop.html">Shop</a>
+                <button id="navbutton" href="#" type="button">Book Meow</button>
+                <a href="javascript:void(0);"  class="icon" onclick="myFunction()">&#9776;</a> <!-- Hamburger icon -->
+            </nav>
+        </div>
+        <!--NAVIGATION END-->
+        
+        <!--HEADER-->
+        <div id="header">
+            <h2>Our Story</h2>
+        </div>
+        <!--HEADER END-->
+        
+        
+        <!--STORY-->
+        <div class="story">
+            <div class="row">
+                <div class="column">
+                    <p>We provide high-quality care to our permanent resident rescue felines and foster and feature cats from rescues in order to socialize and find them homes at each cat's own pace. Whenever possible, we go to shelters to rescue high-risk cats in euthanasia shelters.</p>
+                </div><!--/column-->
+                
+                <div class="column">
+                    
+                    <p>Our purpose is to not only save cats, but also show humans just how relaxing and heart-warming they can be. Sip some high-quality tea, mute anxiety, and support rescue cats. </p>
+                </div><!--/column-->
+            </div>
+        </div>
+        
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/7aak1ARFmvc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        
+        <!--STORY END-->
+        
+        <!--TEAM-->
+        <div class="team">
+            <h1>Our KitTeam</h1>
+            
+            <img class="teamImage" src="images/kittea-staff(web).png">
+            <img class="teamImageMobile" src="images/kittea-staff.png">
+                
+            <div class="petco-container">
+                
+                <!--picture-->
+                <img id="petco" src="images/petco-logo.png">
+                    
+                <!--Text-->
+                <div id="petcoTxt">
+                    <p>We've also partnered with the Petco Foundation. Since 1999, the Petco Foundation has invested more than $122 million in lifesaving animal welfare work across the country. Through its adoption efforts in more than 1,300 Petco stores nationwide, the Petco Foundation helps find homes for more than 400,000 animals each year.
+
+                    <br>
+                    <br>
+                    
+                    Today, with its more than 8,000 animal welfare partners, the Petco Foundation empowers communities to make a difference in the lives of animals by funding adoption programs, spay/neuter services, pet cancer research, service and therapy animals, and numerous other lifesaving initiatives.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!--TEAM END-->
+        
+        <!--CATS-->
+        <div class="cats">
+            <h1>Our Cats</h1>
+            
+            <!--Pictures-->
+            <div class="rowCats">
+                <div class="columnCats">
+                    <img src="images/cat-1.png">
+                </div><!--/column-->
+                
+                <div class="columnCats">
+                    <img src="images/cat-2.png">
+                </div><!--/column-->
+                
+                <div class="columnCats">
+                    <img src="images/cat-3.png">
+                </div><!--/column-->
+                
+                <div class="columnCats">
+                    <img src="images/cat-4.png">
+                </div><!--/column-->
+            </div>
+            
+            <div class="catsTxt">
+                <p> At KitTea, we typically care for 18-26 cats: 13 of which are permanent resident rescue kitties and the rest are featured adoptable kitties. All of them come from high-risk situations. </p>
+            </div>
+            
+            <div class="adopt">
+                <img class="teamImage" src="images/adopt-web.png">
+                <img class="teamImageMobile" src="images/adopt-mobile.png">
+                
+                <h3>Want to adopt?</h3>
+                
+                <div class="rowAdopt">
+                    <div class="columnAdopt">
+                        <p>We provide high-quality care to our permanent resident rescue felines and foster and feature cats from rescues in order to socialize and find them homes at each cat's own pace. Whenever possible, we go to shelters to rescue high-risk cats in euthanasia shelters.</p>
+                    </div><!--/column-->
+                    
+                    <div class="columnAdopt">
+                        <p>Our purpose is to not only save cats, but also show humans just how relaxing and heart-warming they can be. Sip some high-quality tea, mute anxiety, and support rescue cats. Please adopt, don't shop! </p>
+                    </div><!--/column-->
+                </div>
+        </div>
+        <!--CATS END-->
+        
+        
+        <!--FOOTER-->
+        <div class="footer-container">
+            <img class="web" src="images/banner-web.png">
+            <img class="mobile" src="images/banner-mobile.png">
+        </div>
+        <!--FOOTER END-->
+        
+        
+        <script> // Javascript
+            function myFunction(){
+                var x = document.getElementById("respNav");
+                
+                if (x.className === "mainNav"){
+                    x.className += " responsive";
+                } else {
+                    x.className = "mainNav";
+                }
+            }
+        
+            </script>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+}
+
+/*MAIN COMPONENTS*/
+p {
+    font-family: raleway, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+    color: darkslategray;
+    width: 100%;
+}
+
+button {
+    background-color: #E66B6B;
+    border-radius: 5px;
+    color: white;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #e15151;
+}
+
+/*TABLET*/
+@media screen and (max-width: 850px){
+    p {font-size: 14px;}
+    
+    button {
+        border-radius: 2.5px;
+        font-size: 12px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-right: 2.5%;
+    }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    button {
+        border-radius: 2.5px;
+        font-size: 12px;
+    }
+}
+
+/*MAIN COMPONENTS END*/
+
+
+/*NAVIGATION*/
+.wrapper{
+    background-color: white;
+}
+
+.mainNav{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+    width: 100%;
+    padding-left: 3%;
+}
+
+.mainNav a {
+    font-family: raleway, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    color: darkslategray;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 35px;
+}
+
+.mainNav a:hover{
+    font-weight: 700;
+    color: #14A1CB;
+}
+
+a.active{
+    color: #E66B6B;
+    font-weight: 700;
+}
+
+.mainNav .icon{
+    display: none;
+}
+
+.logo img{
+    position: fixed;
+    float: left;
+    margin: auto;
+    width: 200px;
+    z-index: 1001;
+}
+
+#navbutton{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+/* TABLET */
+@media (max-width: 850px) {
+    .mainNav a{
+        font-size: 14px;
+        padding: 5px;
+        margin: 15px 17px;
+    }
+    
+    .logo img{
+        width: 15%;
+        margin-top: 0.9%
+    }
+    
+    #navbutton{
+        margin-top: 10px;
+        margin-right: 2%;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 600px){
+    
+    .mainNav a {
+        display: none;
+    }
+    
+    .mainNav a.icon {
+        display: block;
+        float: right;
+        color: #E66B6B;
+    }
+    
+    #navbutton{
+        display: none;
+    }
+    
+    .logo img{
+        width: 40%;
+        margin: 2px;
+        position: fixed;
+        top: 0;
+    }
+    
+    .mainNav.responsive { /* When responsive, change position from fixed to relative */
+        position: relative;
+    }
+    .mainNav.responsive .icon { /* Where hamburger icon is when menu is open */
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        z-index: 1002;
+        
+    }
+    .mainNav.responsive a { /* What nav items look like expanded*/
+        display: block;
+        text-align: center;
+        background-color: white;
+        position: relative;
+    }
+}
+/*NAVIGATION END*/
+
+
+/*HEADER*/
+#header {
+    margin: 80px auto 0 auto;
+    width: 100%;
+    float: left;
+    font-family: questa-grande, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 72px;
+    text-align: center;
+    padding: 0;
+    color: #14A1CB;
+}
+
+/*TABLET*/
+@media screen and (max-width: 850px) {
+    #header{
+        margin: 60px auto 0 auto;
+    }
+    
+    h2 {font-size: 42px;}
+}
+
+/*HEADER END*/
+
+
+/*FOOTER*/
+.footer-container{
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container .web{
+    width: 100%;
+}
+
+.footer-container .mobile {
+    display: none;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 600px) {
+    .footer-container{
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .footer-container .web{
+        display: none;
+    }
+    
+    .footer-container .mobile {
+        width: 100%;
+        display: block;
+    }
+}
+
+/*FOOTER END*/

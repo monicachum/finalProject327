@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KitTea</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/ktMenu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/ktUniv.css"/>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+        <link rel="stylesheet" href="https://use.typekit.net/scj4crf.css">
+    </head>
+    
+    <body>
+        
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <nav class="mainNav" id="respNav">
+                <a href="index.html">Home</a>
+                <a class="active" href="kt_menu.html">The Menu</a>
+                <a href="kt_about.html">Our Story</a>
+                <a href="kt_shop.html">Shop</a>
+                <button id="navbutton" href="#" type="button">Book Meow</button>
+                <a href="javascript:void(0);"  class="icon" onclick="myFunction()">&#9776;</a> <!-- Hamburger icon -->
+            </nav>
+        </div>
+
+        <div id="header">
+            <h2> The Menu </h2>
+        </div>
+
+        <div class="teaMenu">
+            <p id="feature">Our Teas</p>
+            
+            <div class="row">
+                
+                <div class="column">
+                    <img class="tea" src="images/menu-tea.jpeg">
+                        
+                    <h4>Hojicha</h4>
+                    <p id="ptea">A woody palate derived from roasted spring Sencha stems; naturally decaffeinated (1-5mg).
+                    </p>
+                    
+                    <br>
+                    
+                    <h4>Oolong</h4>
+                    <p id="ptea">From the Fujian Region of China, this Oolong is light, floral and superb, with a unique richness and beautiful bloom after each steep.
+                    </p>
+                </div><!--/column-->
+                
+                <div class="column">
+                    <img class="tea" src="images/menu-tea2.jpeg">
+                        
+                    <h4>Kukicha</h4>
+                    <p id="ptea">Dried apricot and a kiwi/papaya tingle on your tongue. Made from the stems of summer sencha leaves.
+                    </p>
+                    
+                    <br>
+                    
+                    <h4>Earl Grey Creme</h4>
+                    <p id="ptea">Award-winning, fresh + fragrant vanilla Earl Grey tea with beautiful blue corn flowers, bergamot oil, and ceylon.
+                    </p>
+                </div><!--/column-->
+                
+                <div class="column">
+                    <img class="tea" src="images/menu-tea3.jpeg">
+                        
+                    <h4>“Cat Nap”</h4>
+                    <p id="ptea">Our whole leaf spearmint tea is perfectly minty and sweet without any bitter aftertaste; decaffeinated.
+                    </p>
+                    
+                    <br>
+                    
+                    <h4>Sencha</h4>
+                    <p id="ptea">Dried fruit and a nuanced, vegetal finish. Uncloned, heirloom strains represent less than 3% of teas in Japan.
+                    </p>
+                </div><!--/column-->
+            
+            </div>
+
+        </div>
+        
+
+        <div class="foodMenu">
+            <p id="feature">Our Food</p>
+        
+            <img id="foodPic" src="images/menu-food.png">
+
+            <div class="row">
+                <div class="column">
+                    <h4>English Scone Service</h4>
+                    <p id="ptea">Our homemade scone is served with whipped chantilly cream, butter, and organic fruit jam.
+                    </p>
+                    
+                    <br>
+                    
+                    <h4>S’more Choco Cookie</h4>
+                    <p id="ptea">Our signature homemade chocolate cookie warmed with a toasted marshmallow.
+                    </p>
+                    
+                    <br>
+                </div><!--/column-->
+                
+                <div class="column">
+                    <h4>Butterscotch Cookie</h4>
+                    <p id="ptea">Warmed to purr-fection with the perfect amount of butterscotch to sooth that sweet tooth.
+                    </p>
+                    
+                    <br>
+                    
+                    <h4>Chocolate Chip Cookie</h4>
+                    <p id="ptea">Warmed, garnished with sea salt crystals. Purrrfect in every way.
+                    </p>
+                    
+                    <br>
+                </div><!--/column-->
+                
+                <div class="column">
+                    <h4>Paw Print Cookie</h4>
+                    <p id="ptea">Coconut-y, almond-y, and shaped like a cat’s paw. Meowvalous! Plus, it's gluten-free.
+                    </p>
+                    
+                    <br>
+                    
+                    <h4>Brioche Toast</h4>
+                    <p id="ptea">Cinnamon-nutmeg sugar, or matcha sugar.
+                    </p>
+                    
+                    <br>
+                </div><!--/column-->
+                
+            </div>
+        
+        </div>
+        
+        <div class="footer-container">
+            <img class="web" src="images/banner-web.png">
+            <img class="mobile" src="images/banner-mobile.png">
+        </div>
+
+        <script> // Javascript
+            function myFunction(){
+                var x = document.getElementById("respNav");
+                
+                if (x.className === "mainNav"){
+                    x.className += " responsive";
+                } else {
+                    x.className = "mainNav";
+                }
+            }
+        
+        </script>
+
+    </body>
+    
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KitTea</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/ktShop.css"/>
+        <link rel="stylesheet" type="text/css" href="css/ktUniv.css"/>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+        <link rel="stylesheet" href="https://use.typekit.net/scj4crf.css">
+    </head>
+    
+    <body>
+        
+        <!--NAVIGATION-->
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <nav class="mainNav" id="respNav">
+                <a href="index.html">Home</a>
+                <a href="kt_menu.html">The Menu</a>
+                <a href="kt_about.html">Our Story</a>
+                <a class="active" href="kt_shop.html">Shop</a>
+                <button id="navbutton" href="#" type="button">Book Meow</button>
+                <a href="javascript:void(0);"  class="icon" onclick="myFunction()">&#9776;</a> <!-- Hamburger icon -->
+            </nav>
+        </div>
+        <!--NAVIGATION END-->
+
+        <!--HEADER-->
+        <div id="header">
+            <h2> Shop </h2>
+        </div>
+        <!--HEADER END-->
+        
+        <!--ITEMS-->
+        <div class="row">
+            <div class="column">
+                <div class="overlay-container">
+                    <img src="images/sassycat.jpg">
+                        
+                    <div class="overlay">
+                        <div class="pinName">
+                            <p>Sassy Cat Pin</p>
+                        </div>
+                        <div class="price">
+                            <p>$5.00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overlay-container">
+                    <img src="images/quietplease.jpg">
+                    <div class="overlay">
+                        <div class="pinName">
+                            <p>Quiet Please Pin</p>
+                        </div>
+                        <div class="price">
+                            <p>$5.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="column">
+                 <div class="overlay-container">
+                     <img src="images/procats.jpg">
+                     <div class="overlay">
+                         <div class="pinName">
+                             <p>ProCats Pin</p>
+                         </div>
+                         <div class="price">
+                             <p>$5.00</p>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <div class="overlay-container">
+                     <img src="images/purrmaid2.png">
+                     <div class="overlay">
+                         <div class="pinName">
+                             <p>Purrmaid Pin</p>
+                         </div>
+                         <div class="price">
+                             <p>$5.00</p>
+                         </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="overlay-container">
+                    <img src="images/pin3.jpg">
+                        <div class="overlay">
+                            <div class="pinName">
+                                <p id="dark">Plant Cat Pin</p>
+                            </div>
+                            <div class="price">
+                                <p>$5.00</p>
+                            </div>
+                        </div>
+                        </div>
+                <div class="overlay-container">
+                    <img src="images/pizzacat1.png">
+                    <div class="overlay">
+                        <div class="pinName">
+                            <p>Pizza Cat Pin</p>
+                        </div>
+                        <div class="price">
+                            <p>$5.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="overlay-container">
+                    <img src="images/nightmarekiller.jpg">
+                    <div class="overlay">
+                        <div class="pinName">
+                            <p id="dark">Nightmare Killer Pin</p>
+                        </div>
+                        <div class="price">
+                            <p>$5.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay-container">
+                    <img src="images/catface1.png">
+                    <div class="overlay">
+                        <div class="pinName">
+                            <p id="dark">Cat Face Pin</p>
+                        </div>
+                        <div class="price">
+                            <p>$5.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ITEMS END-->
+        
+        
+        <!--FOOTER-->
+        <div class="footer-container">
+            <img class="web" src="images/banner-web.png">
+            <img class="mobile" src="images/banner-mobile.png">
+        </div>
+        <!--FOOTER END-->
+
+        
+        <script> // Javascript
+            function myFunction(){
+                var x = document.getElementById("respNav");
+                
+                if (x.className === "mainNav"){
+                    x.className += " responsive";
+                } else {
+                    x.className = "mainNav";
+                }
+            }
+        
+        </script>
+
+    </body>
+    
+</html>

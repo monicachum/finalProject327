@@ -1,0 +1,105 @@
+#feature {
+    font-size: 30px;
+    text-align: center;
+    font-family: Raleway;
+    margin: 0 auto;
+    width: 100%;
+    float: left;
+    padding: 25px;
+}
+
+h2 {
+    font-family: questa-grande, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 72px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #14A1CB;
+}
+
+h4{
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #575757;
+    padding-left:10px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.column{
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 10px;
+}
+
+.column img{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.teaMenu{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#foodPic{
+    width: 100%;
+    padding: 25px 75px;
+}
+
+.foodMenu{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/*Responsive Layout - changes 4 column structure to 2 column structure*/
+@media (max-width: 850px) {
+    #feature {
+        font-size: 24px;
+        padding: 15px;
+    }
+    
+    h2{
+        font-size: 48px;
+    }
+    
+    h4{
+        font-size: 16px;
+        padding-left: 5px;
+    }
+}
+
+/*Responsive Layout - changes 2 column structure to 1 column structure*/
+@media (max-width: 600px) {
+    h2{font-size: 48px;}
+    
+    .row{padding: 0 10px;}
+    
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+    
+    #ptea{
+        text-align: left;
+    }
+    
+    #foodPic{
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .foodMenu{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+

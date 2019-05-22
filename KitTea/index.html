@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KitTea</title>
+        <meta charset="UTF-8">
+         
+        <!-- Responsiveness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+        <!-- Imports stylesheet -->
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="css/ktUniv.css"/>
+        
+        <link rel="stylesheet" href="https://use.typekit.net/scj4crf.css"/>
+    </head>
+    
+    <body>
+        
+        <!--NAVIGATION-->
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <nav class="mainNav" id="respNav">
+                <a class="active" href="index.html">Home</a>
+                <a href="kt_menu.html">The Menu</a>
+                <a href="kt_about.html">Our Story</a>
+                <a href="kt_shop.html">Shop</a>
+                <button id="navbutton" href="#" type="button">Book Meow</button>
+                <a href="javascript:void(0);"  class="icon" onclick="myFunction()">&#9776;</a> <!-- Hamburger icon -->
+            </nav>
+        </div>
+        <!--NAVIGATION END-->
+        
+        
+        <!--HEADER-->
+        <div class="headerImage">
+            <div class="headerText">
+                <h1>Welcome to</h1>
+                <h2 id="index">KitTea Cat Cafe</h2>
+                <h3>a shortcut to happiness</h3>
+            </div>
+        </div>
+        <!--HEADER END-->
+       
+       
+       <!--CENTER IMAGES-->
+       <div class="row">
+           <div class="column">
+               <img src="images/cat-girl.png">
+           </div><!--/column-->
+           
+           <div class="column">
+               <img src="images/cat-lady.png">
+           </div><!--/column-->
+           
+           <div class="column">
+               <img src="images/cat-lady2.png">
+           </div><!--/column-->
+           
+           <div class="column">
+               <img src="images/shoulder-cat.png">
+           </div><!--/column-->
+       </div>
+       <!--CENTER IMAGES END-->
+       
+       
+       <!--COUNTER-->
+       <div class="counter-container">
+           <!--picture-->
+           <img id="counter" src="images/counter.png">
+           
+           <!--Text-->
+           <div id="counterTxt">
+               <p>You'll meet, play, and cuddle with highly social, pawsome resident and adoptable rescue cats. With your ticket comes a bottomless selection of four premium Japanese green teas, each as subtle and nuanced as our one-eyed resident, Blinx.
+               </p>
+           
+                <a class="p-links" href="kt_menu.html">Take a look at our menu&#8201 &#10095;</a>
+           
+               <!--button-->
+               <button id="counterButton" href="#" type="button">Book Meow</button>
+            </div>
+               
+       </div>
+       <!--COUNTER END-->
+       
+       
+       <!--SHOP LINKS-->
+       <div class= "row-shoplinks">
+           <div class="column-shoplinks">
+               <div class="text shopText">
+                   <h4>KitTea Shop</h4>
+                   <button id="shoplinksbutton" href="#" type="button">Shop Meow</button>
+               </div>
+               <img src="images/register.png">
+               
+           </div>
+           
+           <div class="column-shoplinks">
+               <div class="text">
+                   <h4>Monthly KitTea Kit</h4>
+                   <button id="shoplinksbutton" href="#" type="button">Learn More</button>
+               </div>
+               
+               <img src="images/register.png">
+           </div>
+           
+           <div class="column-shoplinks">
+               <div class="text">
+                   <h4>KitTea Membership</h4>
+                   <button id="shoplinksbutton" href="#" type="button">Learn More</button>
+               </div>
+               <img src="images/register.png">
+               
+           </div>
+       </div>
+       <!--SHOP LINKS END-->
+       
+       
+       <!--LOGO BANNER-->
+       <div class="logobanner">
+           <p id="featured">Featured on</p>
+           <img class="web" src="images/logo-banner.png">
+           <img class="mobile" src="images/logo-banner-mobile.png">
+       </div>
+       <!--LOGO BANNER END-->
+       
+       
+       <!--MEWSLETTER-->
+       <div class="mewsletter-container">
+           <div class="mewsletter">
+               <h5>The cutest Mewsletter ever!</h5>
+               
+               <p class="p-links">(exclusive offers, events, and cat.gifs)</p>
+               
+               <form>
+                   <input type="text" placeholder="email address">
+               </form>
+               
+               <h6>A lot of people say this, but we mean it: we’d never sell your info
+                   <br> (Except to our resident cat Dolly Purrton...when theme park money talks, you listen).
+               </h6>
+               
+               <button id="mewsletterbutton" href="#" type="button">Sign Up</button>
+           </div>
+       </div>
+       <!--MEWSLETTER END-->
+       
+       
+       <!--FOOTER-->
+       <div class="footer-container">
+           <img class="web" src="images/banner-web.png">
+           <img class="mobile" src="images/banner-mobile.png">
+       </div>
+       <!--FOOTER END-->
+       
+       
+       <!--RESPONSIVENESS SCRIPT-->
+       <script> // Javascript
+            function myFunction(){
+                var x = document.getElementById("respNav");
+                
+                if (x.className === "mainNav"){
+                    x.className += " responsive";
+                } else {
+                    x.className = "mainNav";
+                }
+            }
+        </script>
+    </body>
+    
+</html>
+
+

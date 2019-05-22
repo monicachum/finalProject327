@@ -1,0 +1,110 @@
+h2 {
+    font-family: questa-grande, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 72px;
+    text-align: center;
+    margin: 0 0 25px 0;
+    padding: 0;
+    color: #14A1CB;
+}
+
+img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 25px;
+}
+
+.column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 10px;
+}
+
+.column img{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-container{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.overlay-container:hover .overlay{
+    opacity: 1;
+}
+
+.pinName p{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20pt;
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+#dark{
+    color: #666666;
+}
+
+.price p{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-family: raleway, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20pt;
+    color: darkslategray;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+/*TABLET*/
+@media (max-width: 850px) {
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+    
+    .overlay{opacity: 1;}
+}
+
+/*MOBILE*/
+@media (max-width: 600px) {
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+    
+    .overlay{opacity: 1;}
+    
+    .pinName p{font-size: 16pt;}
+    
+    .price p{font-size: 16pt;}
+}
+
+
